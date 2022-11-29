@@ -1,0 +1,31 @@
+<script>
+    //Problema: Capacidade de carga
+    /*
+    Imagine que você está carregando malas em um carro.
+    Faça um programa que pergunte quantas malas serão colocadas no veículo.
+    Para cada mala que for colocada, pergunte qual o peso dessa mala.
+    Ao final do programa, apresente o peso total a ser transportado e considere que, se o peso total transportado for até 150 Kg, a viagem pode ser realizada. Caso ultrapasse esse peso, apresente que a viagem não poderá ser realizada e também apresente quantos Kgs deverão ser retirados do porta-malas.
+    */
+
+    //Entrada
+let malasQuantidade = parseInt(prompt("Informe quantas malas serão colocadas no veículo"));
+let peso = 0;
+let soma = 0;
+let quantidadeVezesDiminuir
+
+    //Processamento
+for (let contador = 0; contador < malasQuantidade; contador++) {
+    peso = Number(prompt("Informe o peso da mala em kg"));
+    soma = soma + peso
+}
+if (soma <= 150) {
+    alert("A viagem pode ser realizada");
+}
+else {
+    retirar = soma - 150;
+    alert(`A viagem não pode ser realizada. Deverão ser retirados ${retirar} Kg`);
+}
+
+    //Saída
+
+</script>
